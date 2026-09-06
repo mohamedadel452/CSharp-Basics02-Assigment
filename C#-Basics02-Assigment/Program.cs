@@ -77,6 +77,20 @@ namespace BookAssigment
             }
             #endregion
 
+            #region Q5 (Declare an int pages = 300; then store it in a double variable without using a cast.)
+            Console.WriteLine("\nQ5: Declare an int pages = 300; then store it in a double variable without using a cast.");
+            int pages = 300;
+            double doublePages = pages; 
+            /* Implicit conversion from int to double 
+             * Because double is a larger data type than int,
+             * the conversion is safe and automatic. */
+            Console.WriteLine($"The value of pages is: {pages}");
+            Console.WriteLine($"The value of doublePages is: {doublePages}");
+
+            #endregion
+
+
+
 
         }
     }
