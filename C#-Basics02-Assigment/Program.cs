@@ -149,7 +149,17 @@ namespace BookAssigment
 
             #endregion
 
+            #region Q10 (Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.)
+            Console.WriteLine("\nQ10: Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.");
+            int copies = 100;// Declare an int variable copies and assign it the value 100
+            object boxedCopies = copies;// Box the int variable copies into an object variable boxedCopies
+            int unboxedCopies = (int)boxedCopies;// Unbox the object variable boxedCopies back into an int variable unboxedCopies
+            Console.WriteLine($"Printing values after boxing and unboxing:");
+            Console.WriteLine($"The value of copies is: {copies}");
+            Console.WriteLine($"The value of boxedCopies is: {boxedCopies}");
+            Console.WriteLine($"The value of unboxedCopies is: {unboxedCopies}");
 
+            #endregion
 
 
         }
