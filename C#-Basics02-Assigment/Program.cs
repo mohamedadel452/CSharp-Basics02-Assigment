@@ -9,8 +9,12 @@ namespace BookAssigment
         // Entry point of the program
         static void Main(string[] args)
         {
-       
-           
+
+            // Class of Book created with the title and  pages
+
+
+
+
         }
     }
 
