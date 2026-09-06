@@ -132,8 +132,23 @@ namespace BookAssigment
             // If parsing fails, print "Invalid number"
             else Console.WriteLine("Invalid number");
 
-            
+
             #endregion
+
+            #region Q9 (Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.)
+            Console.WriteLine("\nQ9: Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.");
+            int pagesNumber = 464;
+            string pagesString = pagesNumber.ToString();
+            // Print the value of pages and pagesString, and the type of pagesString
+            Console.WriteLine($"The value of pages is: {pagesNumber}");
+            Console.WriteLine($"After conversion to string");
+            Console.WriteLine($"The value of pagesString is: {pagesString}");
+            // Print the type of pagesString using GetType()
+            // This will show that pagesString is of type System.String
+            Console.WriteLine($"The type of pagesString is: {pagesString.GetType()}");
+
+            #endregion
+
 
 
 
