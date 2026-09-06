@@ -89,8 +89,19 @@ namespace BookAssigment
 
             #endregion
 
+            #region Q6 (Declare a double price = 49.99; then convert it into an int using a cast.)
+            Console.WriteLine("\nQ6: Declare a double price = 49.99; then convert it into an int using a cast.");
+            double price = 49.99;
+            int intPrice = (int)price; 
+            /* Explicit conversion from double to int using a cast
+             * Because we are converting from a larger data type to a smaller one
+             *  we need to be careful about potential data loss. */
+            Console.WriteLine($"The value of price is: {price}");
+            Console.WriteLine($"The value of intPrice is: {intPrice}");
+            Console.WriteLine($"There is an implicit conversion from double to int, but it will truncate the decimal part.");
+            Console.WriteLine("So We need to be careful when converting from a larger data type to a smaller one.");
 
-
+            #endregion
 
         }
     }
