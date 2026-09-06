@@ -103,6 +103,18 @@ namespace BookAssigment
 
             #endregion
 
+            #region Q7 (Given string pagesText = "464";, convert it into an int using the Convert class.)
+            Console.WriteLine("\nQ7: Given string pagesText = \"464\";, convert it into an int using the Convert class.");
+            //we will use the Convert.ToInt32() method to convert a string to an int.
+            string pagesText = "464";
+            int convertedPages = Convert.ToInt32(pagesText);
+            Console.WriteLine($"The value of pagesText is: {pagesText}");
+            Console.WriteLine($"The value of convertedPages is: {convertedPages}");
+
+            #endregion
+
+
+
         }
     }
 
