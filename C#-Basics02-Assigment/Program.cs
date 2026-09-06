@@ -113,6 +113,28 @@ namespace BookAssigment
 
             #endregion
 
+            #region Q8 (Parse and TryParse)
+            Console.WriteLine("\nQ8: Parse and TryParse");
+            // Given string yearText = "2023";, convert it using int.Parse().
+            Console.WriteLine("-Given string yearText = \"2023\";, convert it using int.Parse().");
+            string yearText = "2023";
+            int parsedYear = int.Parse(yearText);
+            Console.WriteLine($"String \"{yearText}\" parsed using int.Parse(): {parsedYear}");
+            // Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+           Console.WriteLine("\n-Given string badText = \"abc\";, use int.TryParse() to safely try converting it, and print \"Invalid number\" if it fails.");
+            string badText = "abc";
+            bool isSuccess = int.TryParse(badText, out int output);
+            if( isSuccess)
+            {
+                // If parsing is successful, print the parsed value
+                Console.WriteLine("Parsed successfully: " + output);
+            }
+            // If parsing fails, print "Invalid number"
+            else Console.WriteLine("Invalid number");
+
+            
+            #endregion
+
 
 
         }
