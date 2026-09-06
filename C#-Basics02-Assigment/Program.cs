@@ -30,9 +30,14 @@ namespace BookAssigment
 
             #endregion
 
-
-
-
+            #region Q2 ( Using the Book class above, print the result of calling ToString(), Equals(), GetHashCode(), and GetType())
+            // Print the result of calling ToString(), Equals(), GetHashCode(), and GetType() on the book object
+            Console.WriteLine("\nQ2 ( Using the Book class above, print the result of calling ToString(), Equals(), GetHashCode(), and GetType())");
+            Console.WriteLine($"ToString() : {book1.ToString()}");
+            Console.WriteLine($"Equals() : {book1.Equals(book1)}");
+            Console.WriteLine($"GetHashCode() : {book1.GetHashCode()}");
+            Console.WriteLine($"GetType() : {book1.GetType()}");
+            #endregion
 
         }
     }
