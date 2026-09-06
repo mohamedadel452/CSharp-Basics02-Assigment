@@ -39,6 +39,24 @@ namespace BookAssigment
             Console.WriteLine($"GetType() : {book1.GetType()}");
             #endregion
 
+            #region Q3 ( Is it a compile-time error, a runtime error, or a logical error?)
+            Console.WriteLine("\nQ3: int pages = \"464\"; \n Is it a compile-time error, a runtime error, or a logical error?");
+            /* Original code: int pages = "464"; 
+             * This is a Compile-time error 
+             * Becuse we are trying to assign a string value to an integer variable, which is not allowed in C#.
+             * So to fix this error, we need to change the type of the variable pages to string or change the value to an integer. 
+             */
+            Console.WriteLine("\nThis is a Compile-time error because we are trying to assign a string value to an integer variable, which is not allowed in C#.\n");
+            // Fixed code:
+            int fixedPages = 464;
+            Console.WriteLine($"Fixed integer assignment: using int value pages = {fixedPages}\n");
+            //Another solution is to change the type of the variable pages to string like this:
+            string anotherPages = "464";
+            Console.WriteLine($"Another solution: using string value  pages = {anotherPages}\n");
+
+            #endregion
+
+
         }
     }
 
