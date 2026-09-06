@@ -56,6 +56,27 @@ namespace BookAssigment
 
             #endregion
 
+            #region Q4 (Write code that divides 10 by 0 inside a try block,  and catche the exception)
+
+            Console.WriteLine("\nQ4: Write code that divides 10 by 0 inside a try block, and catch the exception");
+            try
+            {
+                int number = 10;
+                int result = number / 0; // This will throw a DivideByZeroException
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Caught an exception of type {ex.GetType()} and the message is: {ex.Message}");
+                Console.WriteLine("So We can say that we ");
+                Console.WriteLine("Cannot divide by zero.");
+            }
+            finally
+            {
+                Console.WriteLine("Done in finally block");
+            }
+            #endregion
+
 
         }
     }
